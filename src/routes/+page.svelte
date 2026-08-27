@@ -1,5 +1,5 @@
 <script lang="ts">
-	import rita from 'rita';
+	import { RiTa } from 'rita';
 
 	let fileContent: string | ArrayBuffer | null;
 	let loaded = false;
@@ -21,7 +21,7 @@
 
 	function generatePoem() {
 		try {
-			const rm = new rita.RiMarkov(n);
+			const rm = new RiTa.RiMarkov(n);
 			rm.addText(fileContent);
 			lines = rm.generate(nSentences, { temperature: temperature });
 		} catch (e) {
@@ -95,7 +95,9 @@
 		font-style: normal;
 		font-weight: 500;
 		src: url('/fonts/PlayfairDisplay-Regular.ttf');
-		src: local(''), url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+		src:
+			local(''),
+			url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
 	}
 
 	@font-face {
@@ -103,7 +105,9 @@
 		font-style: normal;
 		font-weight: 600;
 		src: url('/fonts/PlayfairDisplay-Medium.ttf');
-		src: local(''), url('/fonts/PlayfairDisplay-Medium.ttf') format('truetype');
+		src:
+			local(''),
+			url('/fonts/PlayfairDisplay-Medium.ttf') format('truetype');
 	}
 
 	p,
