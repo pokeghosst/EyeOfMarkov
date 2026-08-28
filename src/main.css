@@ -1,0 +1,31 @@
+@import 'reset.css';
+@import 'typography.css';
+
+:root {
+	--fg-muted: hsl(25, 8%, 45%);
+	--fg-inverse: hsl(25, 20%, 97%);
+	--bg-inverse: hsl(25, 18%, 9%);
+	--bg-sunken: hsl(25, 15%, 92%);
+	--accent: hsl(350, 73%, 29%);
+	--border: hsl(25, 12%, 85%);
+	--border-strong: hsl(25, 10%, 73%);
+	--warm-300: hsl(25, 10%, 73%);
+	--white: #ffffff;
+	--black: #000000;
+
+	--radius-md: 6px;
+
+	/* Typography */
+	--font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+	--font-mono: 'DM Mono', 'Fira Code', 'Courier New', monospace;
+	--type-caption: 400 11px / 1.5 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+	--type-overline: 500 11px /1 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+	--type-body-sm: 400 13px / 1.5 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+	--tracking-widest: 0.12em;
+
+	--weight-light: 300;
+	--weight-regular: 400;
+
+	--shadow-focus: 0 0 0 3px rgba(184, 27, 55, 0.15);
+	--shadow-sm: 0 1px 3px rgba(31, 35, 40, 0.08), 0 1px 0 rgba(31, 35, 40, 0.04);
+}

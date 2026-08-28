@@ -38,6 +38,7 @@
 		"vitest-browser-svelte": "^2.1.1"
 	},
 	"dependencies": {
+		"bits-ui": "^2.19.0",
 		"rita": "^3.2.16"
 	}
 }
